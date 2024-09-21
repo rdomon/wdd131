@@ -1,0 +1,46 @@
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 600px;
+    margin: 100px 400px 100px 400px;
+}
+
+header{
+    letter-spacing: .2rem;
+}
+
+.title{
+    text-align:center ;
+}
+
+main{
+    text-align:left ;
+    margin-top: 40px;
+}
+
+footer{
+    text-align:center ;
+}
+
+.logo{
+    width: 150px;
+    padding: 30px;
+}
+
+.list{
+    line-height: 2.0;
+}
+
+p{
+    line-height: 1.5;
+
+}
+
+.under {
+    padding: 0px;
+    color: #006EB6;
+    font-size: 18px;
+    max-width: 1000px;
+    border-bottom: solid 1px rgb(230, 221, 221);
+
+  }
