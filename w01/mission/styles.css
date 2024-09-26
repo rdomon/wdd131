@@ -37,11 +37,15 @@ p{
 
 }
 
-.under {
+h2{
     padding: 0px;
     color: #006EB6;
     font-size: 18px;
     max-width: 1000px;
     border-bottom: solid 1px rgb(230, 221, 221);
 
+  }
+
+.dark-theme h2 {
+    color: #c1e0ff; /* 明るい青色に変更 */
   }
