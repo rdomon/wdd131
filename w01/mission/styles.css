@@ -3,11 +3,13 @@ body{
     font-family: 'Times New Roman', Times, serif;
     width: 600px;
     margin: 100px 400px 100px 400px;
+    
     background-color: #333;
 }
 
 header{
     letter-spacing: .2rem;
+    color:white;
 }
 
 .title{
@@ -30,11 +32,12 @@ footer{
 
 .list{
     line-height: 2.0;
+    color:white;
 }
 
 p{
     line-height: 1.5;
-
+    color:white;
 }
 
 h2{
@@ -46,6 +49,11 @@ h2{
 
   }
 
-.dark-theme h2 {
-    color: #c1e0ff; /* 明るい青色に変更 */
+.dark h2 {
+    color: #93c7fb;
   }
+
+label{
+    color:white;
+    font-size:16px;
+}
