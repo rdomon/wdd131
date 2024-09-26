@@ -3,6 +3,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     width: 600px;
     margin: 100px 400px 100px 400px;
+    background-color: #333;
 }
 
 header{
