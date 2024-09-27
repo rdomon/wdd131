@@ -1,0 +1,81 @@
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 600px;
+    margin: 100px 400px 100px 400px;
+    
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark theme */
+body.dark{
+    background-color: #333;
+    color: white;
+}
+
+body.dark header{
+    color:white;
+}
+
+body.dark .list, body.dark p, body.dark label{
+    color: white;
+}
+
+dody.dark h2{
+    color:#93c7fb;
+}
+
+/*Light theme*/
+body.light{
+    background-color: #fff;
+    color: black;
+}
+
+body.light .list, body.light p, body.light label {
+    color: black;
+}
+
+body.light h2{
+    color: #006EB6
+}
+
+/*others*/
+.title{
+    text-align:center ;
+}
+
+main{
+    text-align:left ;
+    margin-top: 40px;
+}
+
+header{
+    letter-spacing: .2rem;
+}
+
+
+footer{
+    text-align:center;
+}
+
+.logo{
+    width: 150px;
+    padding: 30px;
+}
+
+.list{
+    line-height: 2.0;
+}
+
+p{
+    line-height: 1.5;
+}
+
+h2{
+    padding: 0px;
+    color: #006EB6;
+    font-size: 18px;
+    max-width: 1000px;
+    border-bottom: solid 1px rgb(230, 221, 221);
+
+  }
