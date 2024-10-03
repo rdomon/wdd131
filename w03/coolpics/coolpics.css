@@ -5,6 +5,7 @@ header {
     color: rgb(41, 35, 96);
     padding: 20px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
@@ -27,6 +28,13 @@ nav ul {
   
 nav li {
     margin: 0 10px;
+}
+
+h2{
+   text-align: center; 
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333;
+   font-size: 20px;
 }
   
 .gallery {
