@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //variables
+        // const a = 1  //common to use const or let.
+        // let b = 2
+        var c = 3
+
+        const obj = {
+            a: 1,
+            b: 2,
+            c: 3, 
+            d: 4,
+
+            getName: ()=> {
+                return "Rena Domon"
+            },
+            e:{
+                a:{
+                    c:{
+                        x: 1
+                    }
+                }
+            }
+        }
+
+        function sum(a, b) {
+            return a + b
+        }
+
+
+    const sum2 = (a, b) => a + b  //上のfunctionと同じ（違うやり方）
+
+    const sum3 = function(a,b){
+        return a + b
+    }
+
+    console.log(d.querySelector('ul'))
+
+    const ListItems = d.querySelectorAll('li')
+
+
+    // console.log(obj.a)
+    // console.log(obj.getName())
+        
+    // const d = document
+    // d.getElementById()
+
+    let counter = 0
+    while(counter < 10){
+        console.log('hello')
+        counter++
+    }
+
+    for(let i = 0; i < 10; i++){
+        console.log('I am in a for loop' + i)
+    }
+
+    ListItems.forEach((li) => {
+        li.classList.add('hello')
+    })
+
+    for (let i = 0; ListItems.length; i++){
+        const ele = ListItems[i]
+        ele.classList.add('hello')
+    }
+        
+    </script>
+    
+</body>
+</html>
