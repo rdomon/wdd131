@@ -58,6 +58,7 @@ main{
     margin-bottom: 30px;
 }
 
+
 .book-meta{
     text-align: right;
     border-right: 1px solid #ccc;
@@ -68,7 +69,7 @@ main{
     margin-right: 15px;
 }
 
-#date{
+.date{
     font-weight: bold;
 }
 
@@ -79,15 +80,23 @@ main{
 
 .book-content img{
     max-width: 200px;
-    /* float: left; */
-    margin-right: 15px;
-    margin-bottom: 10px;    
+    margin-left:200px;
 }
+    /* float: left; */
+
+    /* margin-right: auto;   
+    margin-left: auto;
+    margin-bottom: 10px; 
+
+} */
+
 
 .filters{
     border: 1px solid #ccc;
     padding: 15px;
+    /* grid-area: 1 / col4-start / last-line / 6; */
 }
+
 
 @media (max-width:768px){
     main{
