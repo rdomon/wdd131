@@ -60,6 +60,7 @@ main{
 
 .book-meta{
     text-align: right;
+    border-right: 1px solid #ccc;
 }
 
 .book-meta p{
