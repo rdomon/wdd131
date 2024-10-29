@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input name="phone" type="text"/>
+        <button>Submit</button>
+    </form>
+    
+    <script>
+        const form = document.getElementById('form');
+
+        form.addEventListener("submit", (event) => {
+            evenet.preventDefault();
+
+            const formElement = event.target;
+
+            console.log(event);
+            console.log(formElement);
+
+            const inputElement = formElement.elements["phone"];
+
+
+            const inputValue = inputElement.value;
+
+            inputElement.value ="";
+
+            console.log(inputValue);
+            
+        });
+    </script>
+</body>
+</html>
