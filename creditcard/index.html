@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Card Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png">
+
 </head>
 <body>
     <div id="card-success" class="hidden">
@@ -55,9 +57,7 @@
           <!--- end CVC container --->
               <div id="cvc-container">
             <label for="card-cvc"> CVC/CVV</label>
-            <input id="card-cvc" placeholder="XXX" type="text" min-length="3" max-length="4">
-            <p>Last 3 or 4 digits</p>
-          </div>
+            <input id="card-cvc" placeholder="XXX" type="text" min-length="3" max-length="4">          </div>
         </div>
       
         <!--- Card Back --->
@@ -69,9 +69,5 @@
         <button type="button" id="card-btn">Submit</button>
       
       </div>
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-      <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-      <script src="https://use.fontawesome.com/f1e0bf0cbc.js"></script>
 </body>
 </html>
