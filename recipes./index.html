@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover delicious recipes from around the world with step by step instructions">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Recipe Book - World Cuisine Collection">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover delicious recipes from around the world with step by step instructions">
+    <meta property="og:image" content="images/recipe-book.png">
+    <meta property="og:url" content="https://yoursite.com/recipes">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Recipe Book - World Cuisine Collection</title>
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/recipe-book.png" alt="Recipe Book Logo" width="60" height="60">
+            <h1>Recipe Book</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <form class="search-form" role="search">
+                <label for="search">Search Recipes</label>
+                <div class="search-input-container">
+                    <input type="search" id="search" name="search" 
+                           placeholder="Search for a recipe">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="recipes-section">
+            <h2>Featured Recipes</h2>
+            <div class="recipe-grid">
+                <article class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="./images/chocolate-chip-cookies.jpg" alt="Chocolate Chip Cookies" width="300" height="200">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Chocolate Chip Cookies</h3>
+                        <p class="recipe-description">Delicious soft chocolate chip cookies with coconut.</p>
+                        <div class="recipe-meta">
+                            <span class="cooking-time">11 mins</span>
+                            <span class="difficulty">Medium</span>
+                            <span class="rating" role="img" aria-label="Rating: 5 out of 5 stars">
+                                <span aria-hidden="true" class="icon-star">⭐</span>
+                                <span aria-hidden="true" class="icon-star">⭐</span>
+                                <span aria-hidden="true" class="icon-star">⭐</span>
+                                <span aria-hidden="true" class="icon-star">⭐</span>
+                                <span aria-hidden="true" class="icon-star">⭐</span>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <!-- More recipe cards would go here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <!-- Social media icons from https://www.iconfinder.com/AlfredoCreates -->
+            <a href="#" aria-label="Follow us on Instagram">
+                <img src="images/instagram_icon.svg" alt="" width="30" height="30">
+            </a>
+            <a href="#" aria-label="Subscribe to our YouTube channel">
+                <img src="images/youtube_icon.svg" alt="" width="30" height="30">
+            </a>
+            <a href="#" aria-label="Follow us on Pinterest">
+                <img src="images/pinterest_icon.svg" alt="" width="30" height="30">
+            </a>
+        </div>
+        <p class="attribution">
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+                Recipe icons created by Freepik - Flaticon
+            </a>
+        </p>
+    </footer>
+
+    <script type="module" src="recipes.mjs"></script>
+    <script src="main.js"></script>
+</body>
+</html>
