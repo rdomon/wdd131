@@ -182,7 +182,7 @@ footer {
     }
 
     .recipe-card {
-        flex: 0 1 calc(50% - 1rem);
+        flex: 0 1 calc(70% - 1rem);
     }
 
     .recipe-description {
@@ -190,7 +190,68 @@ footer {
     }
 }
 
-@media (min-width: 960px) {
+
+
+/* Small Screen Design */
+@media (max-width: 599px) {
+    .recipe-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .recipe-card {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: var(--box-shadow);
+    }
+
+    .recipe-image img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .recipe-content {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .recipe-content h3 {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+    }
+
+    .recipe-description {
+        display: none; /* 小さな画面では説明文を非表示 */
+    }
+
+    .recipe-meta {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+    .rating {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .recipes-section {
+        padding: 2rem 1rem;
+    }
+}
+
+
+/* @media (min-width: 960px) {
     .recipe-card {
         flex: 0 1 calc(33.333% - 1.334rem);
     }
@@ -201,5 +262,105 @@ footer {
 
     .recipes-section {
         padding: 3rem 1rem;
+    }
+}  */
+
+@media (min-width: 960px) {
+    .recipe-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* 一列 */
+        gap: 2rem;
+    }
+
+    .recipe-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: var(--box-shadow);
+    }
+
+    .recipe-image img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 0 0 8px; /* 左側を丸める */
+    }
+
+    .recipe-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        flex: 1;
+    }
+
+    .recipe-content h3 {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .recipe-description {
+        margin: 0.5rem 0;
+        color: #666;
+        font-size: 1rem;
+    }
+
+    .recipe-meta {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 1rem;
+    }
+
+    .rating {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .recipes-section {
+        padding: 3rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/* 全体の高さを固定 */
+html, body {
+    height: 100%; /* ページ全体を100%の高さに設定 */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* 縦方向のフレックスレイアウト */
+}
+
+main {
+    flex: 1; /* コンテンツが余白を埋めるように設定 */
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #eddea4;
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: auto; /* フッターを下部に押し下げる */
+}
+
+/* レスポンシブ調整（大画面時） */
+@media (min-width: 960px) {
+    footer {
+        padding: 2rem 1rem; /* パディングを一定に保つ */
     }
 }
