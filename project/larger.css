@@ -1,0 +1,94 @@
+/* Styles for larger screens */
+@media (min-width: 768px) {
+
+    .logo {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0;
+      }
+    
+      .logo img {
+        max-width: 80px;
+        max-height: 80px;
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+    
+      .logo h1 {
+        font-size: 1.8rem;
+      }
+    
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  
+    .hero-section {
+      grid-column: 1 / span 3;
+      position: relative;
+    }
+  
+    .hero-section h2 {
+      font-size: 2rem;
+      top: 30px;
+      text-align:center;
+    }
+  
+    .cta-button {
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      bottom: 30px;
+    }
+  
+    /* main .gift-section {
+      grid-column: 1 / span 3;
+      display: flex;
+      justify-content: space-between;
+    } */
+
+    .gift-section h2{
+        text-align: center;
+    }
+
+    
+  
+    .gift-section .her-image,
+    .gift-section .him-image,
+    .gift-section .kids-image{
+      flex: 1;
+      margin: 0 10px;
+      padding: 15px;
+      background-color:#004681;
+      border-radius: 5px;
+    }
+
+    .gift-section .her-image{
+      grid-column: 1 / span 3;
+
+    }
+
+
+    .gift-section h3{
+        color:white ;
+    }
+  }
+
+  
+  
+  /* Larger desktop view */
+  @media (min-width: 1024px) {
+    .hero-section h2 {
+      font-size: 2.5rem;
+    }
+  
+    .cta-button {
+      font-size: 1.5rem;
+    }
+  }
