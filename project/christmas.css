@@ -195,6 +195,23 @@ nav {
     background-color: #1A1A1A;
   }
 
-.gift-section{
-    align-items: center;
+/* .gift-section */
+.gift-section .her-image,
+.gift-section .him-image,
+.gift-section .kids-image{
+  flex: 1;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color:#9BA9D0;
+  border-radius: 5px;
+}
+
+.gift-section h3{
+    color:#333;
+    text-align: center;
+}
+
+.her-image img{
+    align-items: baseline;
 }
