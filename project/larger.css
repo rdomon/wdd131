@@ -23,47 +23,51 @@
         justify-content: space-between;
         align-items: center;
       }
-
-    main {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-    }
   
+ /* Hero */
     .hero-section {
       grid-column: 1 / span 3;
       position: relative;
     }
   
     .hero-section h2 {
-      font-size: 2rem;
+      font-size: 20px;
       top: 30px;
       text-align:center;
     }
   
     .cta-button {
-      font-size: 1rem;
-      padding: 15px 30px;
-      bottom: 30px;
+      font-size: 10px;
+      padding: 10px 20px;
+      bottom: 15px;
     }
   
-    /* main .gift-section {
-      grid-column: 1 / span 3;
-      display: flex;
-      justify-content: space-between;
-    } */
+/* Gift section */
 
     .gift-section h2{
         text-align: center;
     }
 
-    
-  
-
-
     .gift-section .her-image{
       grid-column: 1 / span 3;
+    }
 
+    .gift-categories {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .her-card{
+        justify-content: center;
+    }
+
+/* Search Section */
+    .search-section{
+        margin-right: 1050px;
     }
   }
 
